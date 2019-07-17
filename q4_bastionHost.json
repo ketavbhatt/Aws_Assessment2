@@ -1,0 +1,68 @@
+{
+    "SecurityGroups": [
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "Self SSH Only", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "E1", 
+                            "CidrIp": "59.152.53.168/30"
+                        }, 
+                        {
+                            "Description": "E2", 
+                            "CidrIp": "59.152.53.104/29"
+                        }, 
+                        {
+                            "Description": "E3", 
+                            "CidrIp": "59.152.53.200/29"
+                        }, 
+                        {
+                            "Description": "E4", 
+                            "CidrIp": "59.152.53.120/29"
+                        }, 
+                        {
+                            "Description": "Q1", 
+                            "CidrIp": "59.152.52.104/29"
+                        }, 
+                        {
+                            "Description": "Q2", 
+                            "CidrIp": "59.152.52.152/29"
+                        }, 
+                        {
+                            "Description": "Q3", 
+                            "CidrIp": "59.152.52.172/30"
+                        }, 
+                        {
+                            "Description": "B1", 
+                            "CidrIp": "202.122.21.69/32"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "Quantiphi SSH", 
+            "VpcId": "vpc-0c0c4207519b27edb", 
+            "OwnerId": "488599217855", 
+            "GroupId": "sg-08b369479180a5cc4"
+        }
+    ]
+}
